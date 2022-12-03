@@ -4,7 +4,7 @@ Docker pro spuštění vlastního vývojového serveru pro materiály na [Kódí
 
 ## Použití
 
-@TODO: doplnit
+Spusťte `docker run -it onset/kodimcz` uvnitř repozitáře s kurzem.
 
 ## Vývoj tohoto docker image
 
