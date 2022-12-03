@@ -1,0 +1,12 @@
+{
+	serverUrl: 'http://localhost:3000',
+	defaultAccess: 'granted',
+	port: 3000,
+	contentDir: '/content',
+	dbUrl: 'mongodb://mongo:27017/kodimcz',
+	sessionSecret: 'xxxxxx',
+	githubApp: {
+		clientId: '00000000000000000000',
+		clientSecret: '0000000000000000000000000000000000000000',
+	},
+}
