@@ -5,7 +5,10 @@
 	"description": "Kodim.cz Docker image for development.",
 	"main": "index.js",
 	"scripts": {
-		"build": "docker build -t kodimcz:0.0.1 ."
+		"get-version": "npm pkg get version | xargs echo",
+		"postversion": "npm run build",
+		"build": "docker build -t \"onset/kodimcz:$(npm run get-version | tail -1)\" .",
+		"release": "docker push \"onset/kodimcz:$(npm run get-version | tail -1)\""
 	},
 	"keywords": [
 		"docker",
