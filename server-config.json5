@@ -1,5 +1,5 @@
 {
-	serverUrl: 'http://localhost:3000',
+	serverUrl: '',
 	defaultAccess: 'granted',
 	port: 3000,
 	contentDir: '/content',
