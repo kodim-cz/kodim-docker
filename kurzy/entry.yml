@@ -1,0 +1,7 @@
+divisions:
+  - title: Kurzy ve vývoji
+    lead: Toto testovací oddělení obsahuje během vývoje pouze jeden kurz.
+    courses:
+      - link: kurz
+        branch: main
+        secret: 'xxx'
