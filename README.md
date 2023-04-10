@@ -15,5 +15,5 @@ docker run --rm -it -v $(pwd):/content/kurzy/kurz onset/kodimcz
 ### Přichystání nové verze
 
 1. Udělejte změny v kódu tohoto repozitáře.
-1. Spusťte `npm version patch` (nebo místo `patch` například `minor`, `major`).
+1. Spusťte `npm version 1.5.17` (číslo podle aktuální verze kodim).
 1. Spusťte `npm run release`.
