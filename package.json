@@ -8,7 +8,7 @@
 		"get-version": "npm pkg get version | xargs echo",
 		"postversion": "npm run build",
 		"build": "docker build -t \"onset/kodimcz:$(npm run get-version | tail -1)\" -t onset/kodimcz:latest .",
-		"release": "docker push \"onset/kodimcz:$(npm run get-version | tail -1)\" && docker push onset/kodimcz:latest"
+		"release": "npm run build && docker push \"onset/kodimcz:$(npm run get-version | tail -1)\" && docker push onset/kodimcz:latest"
 	},
 	"keywords": [
 		"docker",
