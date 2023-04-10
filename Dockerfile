@@ -3,7 +3,7 @@ LABEL maintainer="chalupa.filip@gmail.com"
 COPY content /content
 WORKDIR /app
 RUN apk add git
-RUN git clone https://github.com/podlomar/kodim.cz.git --branch v1.5.12 --depth=1
+RUN git clone https://github.com/podlomar/kodim.cz.git --branch v1.5.17 --depth=1
 WORKDIR /app/kodim.cz
 COPY server-config.json5 /app/kodim.cz/server-config.json5
 RUN npm install -g nodemon
