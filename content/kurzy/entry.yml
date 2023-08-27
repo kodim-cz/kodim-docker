@@ -1,7 +1,6 @@
-divisions:
-  - title: Kurzy ve vývoji
-    lead: Toto testovací oddělení obsahuje během vývoje pouze jeden kurz.
-    courses:
-      - link: kurz
-        branch: main
-        secret: 'xxx'
+title: Kurzy ve vývoji
+lead: Toto testovací oddělení obsahuje během vývoje pouze jeden kurz.
+image: unknown # Some random value to make CMS happy
+mask: unknown # Some random value to make CMS happy
+courses:
+  - kurz

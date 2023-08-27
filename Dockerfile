@@ -1,15 +1,18 @@
-FROM node:16-alpine
+FROM node:18-alpine
 LABEL maintainer="chalupa.filip@gmail.com"
 COPY content /content
 WORKDIR /app
 RUN apk add git
-RUN git clone https://github.com/podlomar/kodim.cz.git --branch v1.5.17 --depth=1
+
+# @TODO: use tagged version instead of commit hash
+# RUN git clone https://github.com/podlomar/kodim.cz.git --branch v1.5.17 --depth=1
+RUN git clone https://github.com/podlomar/kodim.cz.git
 WORKDIR /app/kodim.cz
-COPY server-config.json5 /app/kodim.cz/server-config.json5
-RUN npm install -g nodemon
+RUN git checkout 69570e04ab260e2b466b7f74daeb070ef5f2597e
+
+WORKDIR /app/kodim.cz/website
+RUN echo "CMS_CONTENT_PATH='/content'" > .env.local
 RUN npm ci
-RUN npm run build
-WORKDIR /app/kodim.cz/dist
 RUN git config --global --add safe.directory /content/kurzy/kurz
-ENTRYPOINT ["nodemon", "--watch", "/content/kurzy/**/entry.yml", "server.js"]
+ENTRYPOINT ["npm", "run", "dev"]
 EXPOSE 3000
