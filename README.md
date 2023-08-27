@@ -7,7 +7,7 @@ Docker pro spuštění vlastního vývojového serveru pro materiály na [Kódí
 Spusťte následující příkaz uvnitř repozitáře s kurzem.
 
 ```sh
-docker run --rm -it -v $(pwd):/content/kurzy/kurz onset/kodimcz
+docker run --rm -it -p 3000:3000 -v $(pwd):/content/kurzy/kurz onset/kodimcz
 ```
 
 ## Vývoj tohoto docker image
