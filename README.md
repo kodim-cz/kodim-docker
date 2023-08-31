@@ -2,6 +2,10 @@
 
 Docker pro spuštění vlastního vývojového serveru pro materiály na [Kódím.cz](https://kodim.cz/).
 
+## Docker Hub
+
+[https://hub.docker.com/r/onset/kodimcz](https://hub.docker.com/r/onset/kodimcz)
+
 ## Použití
 
 Spusťte následující příkaz uvnitř repozitáře s kurzem.
