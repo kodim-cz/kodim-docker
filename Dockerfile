@@ -12,8 +12,9 @@ RUN git checkout c30357622e3e538382bf20f707ae21839bf29aa2
 
 WORKDIR /app/kodim.cz/website
 RUN echo "CMS_CONTENT_PATH='/content'" > .env.local
+RUN npm install -g nodemon
 RUN npm ci
 RUN npm run build
 RUN git config --global --add safe.directory /content/kurzy/kurz
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["nodemon", "--watch", "/content/kurzy/**/entry.yml", "--exec", "npm start"]
 EXPOSE 3000
