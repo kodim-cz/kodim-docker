@@ -1,7 +1,7 @@
 {
 	"name": "kodimcz-docker",
 	"private": true,
-	"version": "2.0.0-beta.6",
+	"version": "2.0.0-beta.8",
 	"description": "Kodim.cz Docker image for development.",
 	"main": "index.js",
 	"scripts": {
