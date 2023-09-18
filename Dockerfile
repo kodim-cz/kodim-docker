@@ -8,7 +8,7 @@ RUN apk add git
 # RUN git clone https://github.com/podlomar/kodim.cz.git --branch v1.5.17 --depth=1
 RUN git clone --branch 76-verze-20 https://github.com/podlomar/kodim.cz.git
 WORKDIR /app/kodim.cz
-RUN git checkout d536fd9a951ac2882563dc954a59f02331d24ed1
+RUN git checkout 3ff2858fbb2217bc3e4bd26b4700b3458e92a489
 
 WORKDIR /app/kodim.cz/website
 RUN echo "CMS_CONTENT_PATH='/content'" > .env.local
