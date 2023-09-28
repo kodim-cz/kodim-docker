@@ -3,4 +3,6 @@ lead: Toto testovací oddělení obsahuje během vývoje pouze jeden kurz.
 image: assets/webdev.svg
 mask: assets/webdev-mask.svg
 courses:
-  - kurz
+  - path: kurz
+    repoUrl: https://github.com/fake/fake.git
+    repoFolder: kurz
